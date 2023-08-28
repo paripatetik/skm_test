@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>
+        Lorem Ipsum
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <script src="./ostx_files/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./ostx_files/apple-touch-icon-180x180.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./ostx_files/order.css" />
+
+    <!-- Header/Footer Styles -->
+    <link rel="stylesheet" href="./ostx_files/header-footer.css" />
+    <link rel="stylesheet" href="css/header-footer.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet" />
+    
+    <style>
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Light"), local("Isidora-Light"),
+                url("fonts/Isidora-Light.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Medium"), local("Isidora-Medium"),
+                url("fonts/Isidora-Medium.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Isidora";
+            src: local("Isidora Bold"), local("Isidora-Bold"),
+                url("fonts/Isidora-Bold.woff2") format("woff2");
+            unicode-range: U+000-5FF;
+            font-weight: 700;
+            font-style: bold;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "icomoon";
+            src: url("ostx_files/icomoon2.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src: url("ostx_files/icomoon.eot");
+            src: url("ostx_files/icomoon.eot") format("embedded-opentype"), url("ostx_files/icomoon.ttf") format("truetype"), url("ostx_files/icomoon.woff") format("woff"), url("ostx_files/icomoon.svg") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+        .a3mod_player {
+            padding-top: 0 !important;
+        }
+        .adom-button {
+            width: 400px;
+            max-width: 90%;
+            margin: 0 auto 30px;
+            text-align: center;
+            padding: 20px 40px;
+            border: 1px solid rgb(129, 13, 0);
+            background-color: red;
+            color: #fff;
+            border-radius: 50px;
+            display: block;
+            font-weight: 700;
+            box-shadow: 0 4px 15px 0 rgb(129 150 160 / 45%);
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .adom-button:hover {
+            background-color: rgb(200, 0, 0);
+            color: #fff;
+        }
+        .tet {
+            padding: 10px;
+            border-left: 7px solid #8903ab;
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+            font-style: italic;
+        }
+        .autor-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: #d0d0d0;
+            border-radius: 22px;
+        }
+
+        .autor-img {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .autor-area {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <!-- Carga de Favicon -->
+
+    <link rel="icon" sizes="16x16 32x32 64x64" href="./ostx_files/apple-touch-icon-180x180.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./ostx_files/form-toolong.css" />
+    <link rel="stylesheet" href="./ostx_files/css2.css" />
+    <link rel="stylesheet" href="./ostx_files/style_a3com.4147c6cb54db3b3546cb.css" />
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./ostx_files/m=el_main_css" />
+
+    <script>
+        function displayDate() {
+            var today = new Date()
+            var options = { year: "numeric", month: "long", day: "numeric" }
+            var userLanguage = navigator.language || navigator.userLanguage
+            var date = today.toLocaleDateString(userLanguage, options)
+            document.getElementById("date").innerHTML = date
+        }
+    </script>
+</head>
+
+<body class="pagina-interior programas el-hormiguero invitados" data-new-gr-c-s-check-loaded="14.1107.0"
+    data-gr-ext-installed="" style="overflow: auto" onload="displayDate()">
+    <div id="fbody" class="fbody Home" data-config="third-menu">
+        <!-- ==== HEADER ==== -->
+            <header class="header">
+                <div class="header_top">
+                    <div class="header_top-container container">
+                        <div class="header_top_nav">
+                            <a href="#order_form" alt="#" class="menu_link">
+                                <svg width="36" height="13" fill="#cf2528" viewBox="0 0 68 24"><path d="M0 21.192c6.017 3.451 18.802 4.424 18.846-6.017 0-5.751-9.335-5.663-9.335-8.007 0-2.831 5.928.265 6.503.708.796-1.991 1.637-3.982 2.477-5.972-5.84-3.141-17.253-3.229-17.253 6.238 0 5.707 8.892 5.397 8.892 7.875 0 3.406-7.123-.929-7.521-1.194a384.401 384.401 0 0 1-2.61 6.37zm42.382 1.946h8.052L46.806.355h-8.45l-3.274 12.299h-.133L31.852.355h-8.45l-3.893 22.783h8.096l1.327-13.183 3.628 13.183h4.866l3.628-13.183 1.327 13.183zm10.307 0v.044h15.44v-6.194h-7.388v-2.389h6.547v-5.84h-6.547V6.547h7.211V.353H52.689v22.783z"/></svg>
+                            </a>
+                            <nav class="header_top_links">
+                                <a href="#order_form" class="menu_link">Správy<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg></span></a>
+                                <a href="#order_form" class="menu_link">Služby<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg></span></a>
+                                <a href="#order_form" class="menu_link">SME Minúta</a>
+                                <a href="#order_form" class="menu_link red">Noviny na webe</a>
+                                <a href="#order_form" class="menu_link red">E-knihy</a>
+                                <a href="#order_form" class="menu_link">Parlamentné voľby 2023</a>
+                             
+                            </nav>
+                            <button class="more__btn">Viac</button>
+                        </div>
+                      
+                        <menu class="header-top_menu">
+                            <button class="header-top-btn green">KÚPIŤ PREDPLATNÉ</button>
+                            <button class="header-top-btn"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg></span>POST.sk</button>
+                            <button class="header-top-btn"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-200v-60h80v-304q0-84 49.5-150.5T420-798v-22q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v22q81 17 130.5 83.5T720-564v304h80v60H160Zm320-302Zm0 422q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM300-260h360v-304q0-75-52.5-127.5T480-744q-75 0-127.5 52.5T300-564v304Z"/></svg></span></button>
+                            <button class="header-top-btn"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z"/></svg></span>Prihlásenie</button>
+                        </menu>
+                    </div>
+                </div>
+                <div class="header_center container">
+                    <a href="#order_form"><img src="ad.gif" alt="ads" class="ad"></a>
+                    <div class="header_center-logo">
+                        <a href="#order_form">
+                            <svg fill="#cf2528" viewBox="0 0 68 24" width="120px" height="43px"><title>sme-logo</title><path d="M0 21.192v0c6.017 3.451 18.802 4.424 18.846-6.017 0-5.751-9.335-5.663-9.335-8.007 0-2.831 5.928 0.265 6.503 0.708 0.796-1.991 1.637-3.982 2.477-5.972-5.84-3.141-17.253-3.229-17.253 6.238 0 5.707 8.892 5.397 8.892 7.875 0 3.406-7.123-0.929-7.521-1.194-0.841 2.124-1.725 4.247-2.61 6.37zM42.382 23.138h8.052l-3.628-22.783h-8.45l-3.274 12.299h-0.133l-3.097-12.299h-8.45l-3.893 22.783h8.096l1.327-13.183 3.628 13.183h4.866l3.628-13.183 1.327 13.183zM52.689 23.138v0.044h15.44v-6.194h-7.388v-2.389h6.547v-5.84h-6.547v-2.212h7.211v-6.194h-15.263v22.783z"></path></svg>
+                        </a>
+                        <div class="header_center-day"><p class="header_data">Piatok, 25. august, 2023</p><span>|</span><p>Meniny má Ľudovít</p></div>
+                    </div>
+                    <div class="ad right">
+                        <a href="#order_form" class="header-center-link">Odomknite sicelé SME.sk</a>
+                        <a href="#order_form" class="header_center-btn">Kúpiť predplatné</a>
+                    </div>
+                </div>
+              
+            </header>
+            <div class="header_bottom">
+                <div class="header_bottom-container container">
+                    <nav class="header_bottom-nav">
+                        <ul> 
+                            <li class="header_bottom-item"><a href="#order_form">SME.sk</a></li>
+                            <li class="header_bottom-item">
+                                <button class="weather-btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 -960 960 960"><path d="M450-770v-150h60v150h-60Zm256 106-42-43 106-106 42 43-106 106Zm64 214v-60h150v60H770Zm1 302L665-254l43-43 106 106-43 43ZM254-664 148-770l42-42 106 106-42 42Zm-14 484h180q33.333 0 56.667-23.265Q500-226.529 500-259.765 500-293 477.237-317 454.475-341 421-341h-44l-18-41q-15.145-35.75-47.6-56.875T240-460q-58.333 0-99.167 40.765-40.833 40.764-40.833 99Q100-262 140.833-221q40.834 41 99.167 41Zm0 60q-83 0-141.5-58.5T40-320q0-83 58.5-141.5T240-520q57.736 0 105.368 32.5T416-401q60.117 0 101.058 43.589Q558-313.822 558-253q-5 56-44.033 94.5Q474.935-120 420-120H240Zm318-133q-3-15.385-6-30t-6-30q52-20 83-65.538 31-45.539 31-101.324Q660-555 607.5-607.5T480-660q-67.215 0-117.627 42.674Q311.962-574.652 303-509q-16-3-31.5-5.5T240-520q14-88 82.5-144T480-720q100 0 170 70t70 170.342Q720-402 675.5-340 631-278 558-253Zm-77-227Z"/></svg>
+                                <div class="weather"></div>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="header_bottom-menu">
+                            <li class="header_bottom-item"><a href="#order_form">SME Minúta</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">DOMOV</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">REGIÓNY</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">INDEX</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">SVET</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">ŠPORT</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">KOMENTÁRE</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">KULTÚRA</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">VIDEO</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">AUTO</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">TECH</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">ŽENA</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">ZDRAVIE</a></li>
+                            <li class="header_bottom-item"><a href="#order_form">BLOG</a></li>
+                        </ul>
+                        <div class="header_bottom-r">
+                            <button class="header_bottom-burger"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="26" viewBox="0 -960 960 960"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>MENU</button>
+                            <a href="#order_form" class="header_bottom-search"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="26" viewBox="0 -960 960 960"><path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/></svg></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <!-- ==== FIN HEADER ==== -->
+        <main data-index="0">
+            <article class="module-interior" data-mod="atresmedia_module_interior">
+                
+                <div class="container" style="margin-top: 20px">
+                    <h1>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    </h1>
+                    <h3>
+                        Praesent aliquet risus lacus. Praesent vitae bibendum orci. Praesent lobortis convallis mauris, elementum rhoncus felis vehicula quis.
+                    </h3>
+                    <div class="multimedia">
+                        <div class="a3mod_player modVideo a3mod_player">
+                            <a href="#order"><img class="vjs-poster" src="./ostx_files/hero.webp" alt="" title=""
+                                    width="100%" height="100%" /></a>
+
+                            <div class="playerContainer video" data-mod-elem="playerContainer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <section class="row">
+                        <div class="col-md-12">
+                            <div class="article-main margin-none">
+                                <!-- header artículo -->
+                                <header class="article-main__header">
+                                    <p class="tet" style="font-style: italic">
+                                        <b>
+                                            Aenean aliquam mauris in ornare ultrices. Vestibulum ut lobortis arcu, eget dictum odio.
+                                            <font color="red">
+                                                <b>Morbi mi ante, semper vel nunc tempor, facilisis efficitur magna.</b>
+                                            </font>
+                                        </b>
+                                    </p>
+                                </header>
+                                
+                                <div class="autor-area">
+                                    <div class="autor-img">
+                                        <img src="./ostx_files/hero1.png" alt="" />
+                                    </div>
+                                    <div class="autor-text">
+                                        <br />
+                                        <p><b>Lorem Ipsum</b></p>
+                                        <br />
+                                        <p>
+                                            Maecenas pulvinar viverra lacus vitae lobortis. Etiam sed felis in magna elementum volutpat aliquet nec nulla. Pellentesque nec erat sapien. 
+                                        </p>
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-main">
+                                <div id="intext" class="article-main__content" style="min-height: 20px">
+                                    <style>
+                                        body {
+                                            font-family: "Open Sans",
+                                                sans-serif;
+                                            letter-spacing: -0.005em;
+                                            font-size: 15px;
+                                            text-rendering: optimizeLegibility;
+                                            -webkit-font-smoothing: antialiased;
+                                            -moz-osx-font-smoothing: grayscale;
+                                        }
+
+                                        .interview {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 10px;
+                                        }
+
+                                        .interview img {
+                                            display: block;
+                                            border-radius: 50%;
+                                            width: 100%;
+                                            max-width: 120px;
+                                        }
+
+                                        .interview span {
+                                            font-family: "GothamBold";
+                                            font-weight: bold;
+                                        }
+
+                                        @media (max-width: 600px) {
+                                            .interview {
+                                                align-content: center;
+                                                flex-direction: column;
+                                                text-align: center;
+                                            }
+
+                                            .interview img {
+                                                max-width: 100px;
+                                            }
+
+                                            .interview span {
+                                                display: block;
+                                                text-align: center;
+                                            }
+                                        }
+
+                                        img {
+                                            width: 100%;
+                                        }
+
+                                        hr {
+                                            width: 100%;
+                                            border: 1px solid rgb(194, 194, 194);
+                                        }
+                                    </style>
+
+                                    <p>
+                                        A szerkesztőtől: A statisztikák
+                                        szerint mindenki, akinek papillómája
+                                        van a bőrön, féregfertőzött, amely
+                                        belülről eszi meg. Az előfordulás
+                                        okai nagyon különbözőek - a
+                                        legyengült immunrendszertől a
+                                        szennyezett környezeti helyzetig.
+                                    </p>
+                                    <hr />
+
+                                    <a href="#order"><img src="./ostx_files/hero3.jpeg" alt="" /></a>
+
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span> Ipsum Ipsum: </span>
+                                            Vestibulum non orci volutpat velit blandit pulvinar eu id lacus. Maecenas rhoncus turpis id massa ornare scelerisque. Donec ante sapien, auctor ut eleifend eu, consequat rutrum ligula. Etiam ac dolor felis.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> Nulla dapibus, elit vitae dapibus malesuada, justo arcu finibus quam, et maximus ex nisl eleifend enim. Vestibulum vitae euismod urna. Sed risus velit, consequat ut nibh et, fermentum dapibus erat. 
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <p class="tet" style="font-style: italic">
+                                        <b>
+                                            Aenean et eleifend libero, et sagittis metus. Aenean vestibulum fermentum tristique. Sed sollicitudin efficitur fermentum.
+                                        </b>
+                                    </p>
+
+                                    <hr />
+
+                                    <a href="#order"><img src="./ostx_files/hero4.jpeg" alt="" /></a>
+                                    <hr />
+
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span> Cras sit amet nulla mi. Donec quis tellus malesuada ipsum vestibulum fringilla.
+                                        </p>
+                                    </div>
+
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum: </span> Phasellus molestie nulla vitae arcu dapibus faucibus. Vestibulum tempor velit ac felis placerat vehicula.
+
+                                            Etiam pretium nisi justo, in ultricies purus feugiat a. Maecenas aliquet lacinia dui, quis pellentesque mauris accumsan non. 
+                                        </p>
+                                    </div>
+                                    <hr />
+
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span>
+                                            Ut ipsum mi, molestie sed convallis vel, molestie quis turpis.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> 
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis lacus scelerisque leo vulputate commodo a sit amet tellus. Aenean cursus sollicitudin quam, ut euismod mi hendrerit et. Nulla ac condimentum eros. Nam aliquam purus quis blandit viverra. Cras eget nisl risus. <br /><br />
+                                            Curabitur rhoncus aliquam nisl vitae commodo. Proin sollicitudin sapien quis ligula venenatis, non accumsan dui malesuada. 
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <p class="tet" style="font-style: italic">
+                                        <b>
+                                            Curabitur vitae pellentesque justo. Nunc eget sem at neque molestie cursus. Vestibulum sit amet ante in lorem auctor fringilla scelerisque ut neque.
+                                        </b>
+                                    </p>
+                                    <hr />
+
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span> Nunc pellentesque vulputate nunc venenatis ullamcorper.
+                                        </p>
+                                    </div>
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> Donec at urna vitae sem pellentesque congue. Donec auctor eros metus, at lacinia enim porta sit amet. Nunc sed justo maximus, dignissim lorem in, feugiat libero.
+
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                            Aliquam pharetra, felis et interdum facilisis, sapien ante finibus eros, viverra accumsan felis lectus eget nisl. Aliquam vitae mollis mauris. Donec eget metus augue. Pellentesque luctus lectus in risus rhoncus ornare. In nec sollicitudin ipsum, nec vulputate tortor.
+                                        </p>
+                                    </div>
+                                    <hr />
+
+                                    <a href="#order"><img src="./ostx_files/hero7.jpeg" alt="" /></a>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span>
+                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </p>
+                                    </div>
+
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span>
+                                            Aenean dictum, dolor sit amet consectetur dapibus, neque leo scelerisque nisl, eget molestie magna tellus non dolor. Sed eu maximus orci, tempus efficitur nibh. Morbi dictum facilisis magna, eu iaculis velit fringilla at. Sed ornare convallis urna, vel convallis nulla fermentum vitae. Praesent ut auctor dui. Ut nec eros id massa venenatis pulvinar consequat et erat. Fusce vel faucibus ante, quis pretium nunc. Vestibulum ultrices sagittis nisl a vulputate. Phasellus mollis ac nulla vel faucibus.
+                                            <br /><br />
+                                            Aliquam vehicula ut metus a aliquam. Sed ultricies hendrerit lorem eu lacinia. Etiam feugiat condimentum mauris, id aliquam nisi vehicula vitae. Mauris pharetra eros quis dapibus placerat. 
+                                        </p>
+                                    </div>
+
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span> Curabitur egestas sodales dui vel elementum. Curabitur cursus fermentum placerat.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> Vivamus euismod nibh nec ante mollis, a consectetur nibh vestibulum. Proin eleifend tincidunt condimentum. Etiam non nulla dui. Pellentesque eu nisl in ante venenatis congue in at massa. Quisque consequat volutpat ante, non egestas odio viverra quis. Morbi congue enim sit amet nulla consequat porta. Nunc sagittis turpis nisi, a tincidunt augue consectetur ac.
+
+
+                                            <br /><br />
+                                            Integer risus mi, consequat nec posuere vel, accumsan at sem. Sed venenatis non ante eu ullamcorper. Nulla tincidunt rutrum magna quis interdum. Ut at facilisis erat, non semper lacus. Donec at urna vitae mauris vestibulum iaculis fringilla eget ipsum. Cras pulvinar sapien pretium, lobortis ante sed, facilisis lectus.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span>
+                                            Quisque ornare egestas urna in rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> In ut feugiat orci. Cras venenatis, mi sed egestas mollis, erat dui eleifend dui, id iaculis ligula massa sit amet justo. Vivamus commodo est urna, ac condimentum enim accumsan eget. Morbi quam sapien, luctus vel turpis at, feugiat efficitur justo. Sed convallis efficitur turpis, a lobortis orci scelerisque sit amet. <br /><br />
+                                            Vivamus ligula nisi, ornare ut nisl ut, eleifend rutrum metus. Nam finibus ut est ut laoreet. Maecenas nec efficitur lacus. Etiam porttitor eget dolor id accumsan. Praesent fermentum consectetur velit nec mattis. Vestibulum congue dui rutrum, hendrerit arcu eu, hendrerit mauris.
+                                            <br /><br />
+                                            Nam mattis et felis et varius. Nulla in sollicitudin lectus. In imperdiet sem nisi, eu tincidunt nisl dapibus nec. Suspendisse mi orci, viverra eu posuere eget, ultricies egestas ante. Suspendisse mollis maximus odio, ac malesuada ex malesuada at. Cras facilisis fringilla diam at tincidunt. Nulla felis mi, pretium ac sapien nec, scelerisque faucibus risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean erat erat, commodo vel condimentum et, accumsan in tortor.
+
+
+                                        </p>
+                                    </div>
+                                    <hr />
+
+                                    <a href="#order"><img src="./ostx_files/hero7-1.webp" alt="" /></a>
+                                    <p style="text-align: center">
+                                        Proin vitae consectetur tellus. 
+                                    </p>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span> Nunc gravida ligula in sem posuere sollicitudin. Proin lobortis laoreet ex, ut molestie ligula bibendum sed.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span>Suspendisse ultrices ligula
+                                            <a href="#order">Lorem Ipsum</a>,
+                                            ut velit rutrum, eu sagittis turpis blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam laoreet tempor justo non mattis. Quisque auctor non libero a ullamcorper.  <br /><br />
+                                            Cras est dui, aliquam vitae lacus a, hendrerit pulvinar nulla. Vestibulum facilisis ante vitae ex consequat, sit amet varius arcu eleifend. Phasellus vitae elit accumsan, fringilla est nec, varius mauris. 
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span> Fusce ut efficitur urna, eget semper mauris. Sed ac orci vitae sem venenatis imperdiet. Phasellus lectus ante, porttitor in velit auctor, dapibus luctus tortor. Nulla facilisi.
+                                            <br />
+                                            <br />
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit odio in mattis pretium. 
+                                            <a href="#order">Lorem Ipsum</a>.
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int1.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Ipsum Ipsum:</span>
+                                            Mauris eu quam tempus, congue est ut
+                                        </p>
+                                    </div>
+                                    <hr />
+                                    <div class="interview">
+                                        <img src="./ostx_files/int2.png" alt="alt" />
+                                        <p class="text">
+                                            <span>Lorem Ipsum:</span>
+                                            Donec non volutpat libero. Etiam luctus neque at consectetur ornare. Vivamus convallis leo erat, et bibendum ex auctor posuere. Duis lobortis dui vel turpis sodales mattis.
+                                            <a href="#order">Lorem Ipsum</a>.
+                                            <br /><br />
+                                        </p>
+                                    </div>
+                                    <hr />
+
+                                    <p style="
+                                                padding: 20px;
+                                                font-size: 20px;
+                                                background-color: rgb(194,254,103);
+                                                border-radius: 12px;
+                                            ">
+                                        Fontos! Megállapították, hogy
+                                        <script>
+                                            d = new Date()
+                                            p = new Date(d.getTime())
+                                            monthA =
+                                                "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
+                                                    ","
+                                                )
+                                            var w = p.getDate()
+                                            document.write(
+                                                monthA[p.getMonth()] + " "
+                                            )
+                                        </script>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non quam eget massa volutpat mattis ut ut tortor. Ut malesuada ipsum at tortor dictum, egestas pretium sapien feugiat
+                                        <a href="#order">Lorem Ipsum</a>
+                                        Morbi ullamcorper eu nisi id commodo. Quisque in sodales diam. Curabitur a varius nibh. Nullam sit amet congue ligula. Duis interdum erat vitae ex malesuada, at dictum orci congue.
+                                    </p>
+
+                                    <p style="
+                                                text-align: center;
+                                                font-size: 22px;
+                                                font-weight: bold;
+                                                color: red;
+                                                display: flex;
+                                                justify-content: center;
+                                            ">
+                                        *Mauris suscipit ultrices eros, id facilisis augue. Sed dictum fringilla iaculis.
+                                    </p>
+                                    <a id="order"></a>
+                                    <center>
+                                        <img src="./ostx_files/product.jpeg" style="max-width: 300px" alt="" />
+                                        <div class="order_info" id="order">
+                                            <div class="promoDate" style="text-align: center">
+                                                <h2 style="
+                                                            font-size: 38px;
+                                                            line-height: 50px;
+                                                            margin-bottom: 0px;
+                                                            color: #000;
+                                                        ">
+                                                    Lorem <br />
+                                                    Ipsum
+                                                    <b style="
+                                                                font-size: 68px;
+                                                                color: red;
+                                                            ">2</b>
+                                                    Lorem Ipsum
+                                                </h2>
+                                                <h3 style="
+                                                            font-size: 34px;
+                                                            line-height: 24px;
+                                                            color: #000;
+                                                        ">
+                                                    <script type="text/javascript">
+                                                        d = new Date()
+                                                        p = new Date(
+                                                            d.getTime() -
+                                                            1 * 86400000
+                                                        )
+                                                        monthb =
+                                                            "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
+                                                                ","
+                                                            )
+                                                        document.write(
+                                                            p.getDate()
+                                                        )
+                                                    </script>
+                                                    és
+                                                    <script type="text/javascript">
+                                                        d = new Date()
+                                                        p = new Date(
+                                                            d.getTime()
+                                                        )
+                                                        monthb =
+                                                            "Január, Február, Március, Április, Május, Június, Július, Augusztus, Szeptember, Október, November, December".split(
+                                                                ","
+                                                            )
+                                                        document.write(
+                                                            p.getDate() +
+                                                            " " +
+                                                            monthb[
+                                                            p.getMonth()
+                                                            ]
+                                                        )
+                                                    </script>
+                                                </h3>
+                                            </div>
+                                            <h4 style="
+                                                        display: block;
+                                                        margin-block-start: 1em;
+                                                        margin-bottom: 30px;
+                                                        font-size: 20px;
+                                                        font-weight: bold;
+                                                        color: #000;
+                                                    ">
+                                                Lorem
+                                                <a href="#order"></a><a href="#order">Lorem Ipsum</a>! <br /><br />
+                                                <b style="
+                                                            font-size: 30px;
+                                                            color: red;
+                                                        ">
+                                                    Morbi in orci sed
+                                                </b>
+                                                Ipsum
+                                                <s style="
+                                                            font-size: 30px;
+                                                            color: gray;
+                                                        ">
+                                                    0000</s>
+                                                Morbi in orci sed
+                                            </h4>
+                                            <div class="timerHolder" id="counter_product">
+                                                <span style="
+                                                            color: #fff;
+                                                            font-size: 18px;
+                                                            margin-bottom: 7px;
+                                                        " class="timerNameText">
+                                                   Morbi in orci sed:
+                                                </span>
+                                                <div class="timerDay">
+                                                    <span class="timerDayVal timerVal">
+                                                        0</span><span class="timerSign">
+                                                        lorem
+                                                    </span>
+                                                </div>
+                                                <div class="timerHour">
+                                                    <span class="timerHourVal timerVal hours">09</span><span
+                                                        class="timerSign">
+                                                        lorem
+                                                    </span>
+                                                </div>
+                                                <div class="timerMin">
+                                                    <span class="timerMinVal timerVal mins">12</span><span
+                                                        class="timerSign">
+                                                        lorem
+                                                    </span>
+                                                </div>
+                                                <div class="timerSec">
+                                                    <span class="timerSecVal timerVal secs">54</span><span
+                                                        class="timerSign">
+                                                        ipsum
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="orderWrapper">
+                                            <hr />
+                                            <div class="orderType" id="order_form_start">
+                                                <h3 style="
+                                                            margin-bottom: 0px;
+                                                            color: #000 !important;
+                                                        ">
+                                                    Morbi in orci sed
+                                                    <a href="#order"> </a><a href="#order"></a><a
+                                                        href="#order">Lorem Ipsum</a>
+                                                </h3>
+                                                <div class="orderTypeButton" data="2" onclick="foo()">
+                                                    <div class="orderTypeRadio"></div>
+                                                    <b class="otHead">
+                                                        Lorem Kala
+                                                    </b>
+                                                    <b class="otPrice">
+                                                        0000</b>
+                                                    <b class="otCurr">
+                                                        aloro
+                                                    </b>
+                                                    <span><b class="" style="
+                                                                    color: green;
+                                                                ">
+                                                            781</b>
+                                                            Morbi in orci sed
+                                                    </span>
+                                                    <button class="otButton">
+                                                        Morbi in orci sed
+                                                    </button>
+                                                </div>
+                                                <div class="orderTypeButton otFirst orderTypeButtonActive" data="1"
+                                                    onclick="foo1()">
+                                                    <div class="orderTypeRadio"></div>
+                                                    <b class="otHead">
+                                                        Morbi in orci sed</b>
+                                                    <b class="otPrice">
+                                                        000
+                                                    </b>
+                                                    <b class="otCurr">
+                                                        iri</b>
+                                                    <span><b class="prod_left_val" style="
+                                                                    color: red;
+                                                                ">
+                                                            17</b>
+                                                            Morbi in orci sed
+                                                    </span>
+                                                    <button id="otButton" class="otButton">
+                                                        Morbi in orci sed
+                                                    </button>
+                                                    <div class="otTimerImg">
+                                                        <img src="./ostx_files/timer2.png" width="50px" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <form action="api.php" method="POST" id="order_form"
+                                                class="order_form al-form" style="width: 350px">
+                                                <input type="hidden" name="sub1" value="{subid}" />
+                                                <input type="hidden" name="fbp" value="{fbp}" />
+                                                <div id="order_form_place" style="display: block">
+                                                    <div class="order_form_inner">
+                                                        <div class="order_form_pole">
+                                                            <label>
+                                                                Mauris pretium:
+                                                            </label>
+                                                            <input type="text" id="name" name="name" required=""
+                                                                placeholder="Adja meg a nevét" />
+                                                        </div>
+                                                        <div class="order_form_pole">
+                                                            <label>
+                                                                Nunc ultrices:
+                                                            </label>
+                                                            <input type="tel" id="phone" class="wv_phone" name="phone"
+                                                                required="" placeholder="Adja meg a telefonszámát"
+                                                                value="" />
+                                                        </div>
+                                                        <div class="order_form_pole" style="
+                                                                    margin-bottom: 20px;
+                                                                    position: relative;
+                                                                " id="scroll_element">
+                                                            <div class="error" style="
+                                                                        list-style: none;
+                                                                        text-align: none;
+                                                                        color: red;
+                                                                        magin-bottom: 10px;
+                                                                    "></div>
+                                                            <button type="submit" name="send_order"
+                                                                id="send_order_button">
+                                                                Nunc ultrices
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <center>
+                                                        <b class="mark" style="
+                                                                    font-size: 16px;
+                                                                ">
+                                                            Ucia
+                                                            <b class="prod_left_val">
+                                                                17</b>
+                                                            calatola
+                                                        </b>
+                                                    </center>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </center>
+                                    <br /><br />
+                                    <div>
+                                        <style>
+                                            .otButton {
+                                                appearance: none;
+                                                background: transparent;
+                                                border: none;
+                                            }
+
+                                            table {
+                                                max-width: 800px;
+                                                min-width: 220px;
+                                                margin: 0px auto;
+                                                box-shadow: 2px 3px 8px 0px rgba(105,
+                                                        105,
+                                                        105,
+                                                        0.39);
+                                            }
+
+                                            th,
+                                            td {
+                                                border-color: rgb(189,
+                                                        189,
+                                                        189);
+                                            }
+
+                                            .tg {
+                                                border-collapse: collapse;
+                                                border-spacing: 0px;
+                                            }
+
+                                            .tg td {
+                                                font-family: Arial,
+                                                    sans-serif;
+                                                font-size: 14px;
+                                                padding: 10px 5px;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                overflow: hidden;
+                                                word-break: normal;
+                                            }
+
+                                            .tg th {
+                                                font-family: Arial,
+                                                    sans-serif;
+                                                font-size: 14px;
+                                                font-weight: normal;
+                                                padding: 10px 5px;
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                overflow: hidden;
+                                                word-break: normal;
+                                            }
+
+                                            .tbg1 {
+                                                background: rgb(180,
+                                                        237,
+                                                        255) none repeat scroll 0% 0%;
+                                            }
+
+                                            .tbg2 {
+                                                background: rgb(235,
+                                                        250,
+                                                        255) none repeat scroll 0% 0%;
+                                            }
+
+                                            .comment {
+                                                display: flex;
+                                                align-items: start;
+                                                gap: 10px;
+                                                margin-bottom: 10px;
+                                                padding: 10px;
+                                            }
+
+                                            .ava {
+                                                width: 50px;
+                                                padding: 0 !important;
+                                                margin: 0;
+                                            }
+
+                                            .comment span {
+                                                display: block;
+                                                font-weight: bold;
+                                                padding-bottom: 10px;
+                                            }
+
+                                            .comment p {
+                                                margin: 0;
+                                            }
+
+                                            .comment-block {
+                                                width: 100%;
+                                                max-width: 1000px;
+                                                margin: 0 auto;
+                                            }
+                                        </style>
+                                        <br />
+
+                                        <p style="
+                                                    padding: 20px;
+                                                    font-size: 20px;
+                                                    font-weight: bold;
+                                                ">
+                                            194 hozzászólás ma:
+                                        </p>
+                                        <div class="comment-block">
+                                            <div class="comment">
+                                                <img src="./ostx_files/31.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nunc ultrices
+                                                        <a href="#order">Hello</a>
+                                                        Etiam posuere libero sit amet ex efficitur, in tincidunt arcu semper. Praesent commodo malesuada mauris, sit amet viverra sem viverra vel. 
+                                                        <a href="#order">Hello</a>
+                                                        Sed non condimentum ligula, et rutrum turpis. Phasellus rhoncus orci eget mollis placerat. Nunc in faucibus magna. Vestibulum eu ante urna. 
+                                                        <a href="#order">Hello</a>
+                                                        Sed non condimentum ligula, et rutrum turpis. Phasellus rhoncus orci eget mollis placerat. Nunc in faucibus magna. Vestibulum eu ante urna. 
+                                                        a
+                                                        <a href="#order">Hello</a>
+                                                        Aliquam quis dapibus odio!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="comment">
+                                                <img src="./ostx_files/4m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Sed fringilla tellus posuere odio venenatis luctus
+                                                        <a href="#order">Hello</a>, Nulla accumsan nisl sit amet metus viverra, eget maximus orci fermentum. Donec feugiat enim nisi, sagittis placerat augue cursus in. Sed lorem lectus, ultricies a leo nec, suscipit vehicula lorem.
+                                                    </p>
+                                                    <br />
+                                                    <img src="./ostx_files/otz22.jpeg" style="width: 250px" alt="" />
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="comment">
+                                                <img src="./ostx_files/24.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nullam ut efficitur metus, et pretium lacus. Donec id eros nibh. Nulla facilisi. Maecenas in magna nec mi accumsan auctor sit amet sit amet dui. Sed imperdiet dolor in sem ullamcorper, sit amet maximus sem posuere. 
+                                                    </p>
+                                                    <br />
+                                                    <img src="./ostx_files/otz4.jpeg" style="width: 250px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/23.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Sed et consectetur leo. Quisque sagittis fermentum felis ac tempor. Aliquam tempus euismod neque a finibus. Nam aliquet ex ut ullamcorper dignissim. Pellentesque quis fringilla nunc, eu sagittis odio. Ut efficitur blandit turpis, vel ornare est ultricies cursus.
+                                                        <a href="#order">Hello</a>
+                                                        Integer fermentum non sem non pellentesque. Vivamus feugiat turpis rhoncus euismod porttitor.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/17m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        In hac habitasse platea dictumst. Integer tincidunt, nulla sed mollis efficitur
+                                                        <a href="#order">Hello</a>
+                                                        Lorem Lorem
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/20m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nunc lorem nunc, sodales ut nulla eu, suscipit efficitur ex. In sed orci a urna faucibus mollis eget id velit. Curabitur ut consectetur nisl. Phasellus sit amet massa aliquam, posuere tellus ut, luctus nulla. Nullam volutpat est ac metus condimentum, aliquet feugiat massa ultricies. Suspendisse fermentum erat vitae nulla vestibulum tincidunt. Nam lacinia ullamcorper purus, et accumsan sapien vehicula in.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/19m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Sed nulla leo, vehicula vitae mollis vitae, dictum at sem. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/7m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Donec dignissim augue pharetra, elementum risus ut, dapibus lacus. 
+                                                        <a href="#order">Hello</a>
+                                                        Donec ac sodales lectus, sit amet dignissim tortor. 
+                                                    </p>
+                                                    <br />
+                                                    <img src="./ostx_files/otz2.webp" style="width: 250px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/16m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Praesent mi augue, aliquam eu hendrerit id, sodales non tortor. Proin commodo ante vitae tortor dictum dapibus. Duis luctus egestas nisl a posuere.
+                                                        <a href="#order">Hello</a>
+                                                        Nullam dictum nisi ut fermentum aliquam. Donec mattis sollicitudin lorem, in congue massa hendrerit ut.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/11m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nam condimentum vulputate condimentum. Proin imperdiet magna vitae placerat eleifend. Nam orci dui, rutrum nec ante nec, laoreet commodo mi.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/4m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nunc vel sagittis est. Aenean viverra tellus sit amet lectus facilisis posuere. Sed interdum elementum ante ac dignissim.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/22m.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Aenean dictum, dolor sit amet consectetur dapibus, neque leo scelerisque nisl, eget molestie magna tellus non dolor. Sed eu maximus orci, tempus efficitur nibh. 
+                                                        <a href="#order">Hello</a>, Morbi dictum facilisis magna, eu iaculis velit fringilla at. Sed ornare convallis urna, vel convallis nulla fermentum vitae. Praesent ut auctor dui. 
+                                                    </p>
+                                                    <br />
+                                                    <img src="./ostx_files/otz3.jpeg" style="width: 250px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/30.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum
+                                                    </span>
+                                                    <p>
+                                                        A
+                                                        <a href="#order">Hello</a>
+                                                        Ut nec eros id massa venenatis pulvinar consequat et erat. Fusce vel faucibus ante, quis pretium nunc. Vestibulum ultrices sagittis nisl a vulputate. Phasellus mollis ac nulla vel faucibus.
+                                                    </p>
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/25.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Aliquam vehicula ut metus a aliquam. Sed ultricies hendrerit lorem eu lacinia. Etiam feugiat condimentum mauris, id aliquam nisi vehicula vitae. Mauris pharetra eros quis dapibus placerat. 
+                                                        <a href="#order">Hello</a>
+                                                        Curabitur egestas sodales dui vel elementum. Curabitur cursus fermentum placerat. Integer non lacus et metus tempus commodo at nec ligula.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/26.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Vivamus euismod nibh nec ante mollis, a consectetur nibh vestibulum. Proin eleifend tincidunt condimentum. Etiam non nulla dui. Pellentesque eu nisl in ante venenatis congue in at massa.
+                                                        <a href="#order">Hello</a>
+                                                        Quisque consequat volutpat ante, non egestas odio viverra quis. Morbi congue enim sit amet nulla consequat porta. Nunc sagittis turpis nisi, a tincidunt augue consectetur ac.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/27.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Integer risus mi, consequat nec posuere vel, accumsan at sem. 
+                                                        <a href="#order">Hello</a>
+                                                        Sed venenatis non ante eu ullamcorper. 
+                                                    </p>
+                                                    <br />
+                                                    <img src="./ostx_files/otz9.jpeg" style="width: 250px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/28.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Nulla tincidunt rutrum magna quis interdum. Ut at facilisis erat, non semper lacus. Donec at urna vitae mauris vestibulum iaculis fringilla eget ipsum. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/29.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Cras pulvinar sapien pretium, lobortis ante sed, facilisis lectus. Quisque ornare egestas urna in rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/heros.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        In ut feugiat orci. Cras venenatis, mi sed egestas mollis, erat dui eleifend dui, id iaculis ligula massa sit amet justo. Vivamus commodo est urna, ac condimentum enim accumsan eget. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/33.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Morbi quam sapien, luctus vel turpis at, feugiat efficitur justo. Sed convallis efficitur turpis, a lobortis orci scelerisque sit amet. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <img src="./ostx_files/heros.png" class="ava" alt="" />
+                                                <div class="comment-text">
+                                                    <span>Lorem Ipsum</span>
+                                                    <p>
+                                                        Vivamus ligula nisi, ornare ut nisl ut, eleifend rutrum metus.
+                                                        <a href="#order">Hello</a>
+                                                        Nam finibus ut est ut laoreet. Maecenas nec efficitur lacus. Etiam porttitor eget dolor id accumsan. 
+                                                        <a href="#order">Hello</a>
+                                                        Praesent fermentum consectetur velit nec mattis. Vestibulum congue dui rutrum, hendrerit arcu eu, hendrerit mauris.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </main>
+    </div>
+    <a class="adom-button">Lorem Ipsum</a>
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-top">
+                <a href="#order_form" alt="sme-logo"><svg fill="#cf2528" viewBox="0 0 68 24" width="120px" height="43px"><title>sme-logo</title><path d="M0 21.192v0c6.017 3.451 18.802 4.424 18.846-6.017 0-5.751-9.335-5.663-9.335-8.007 0-2.831 5.928 0.265 6.503 0.708 0.796-1.991 1.637-3.982 2.477-5.972-5.84-3.141-17.253-3.229-17.253 6.238 0 5.707 8.892 5.397 8.892 7.875 0 3.406-7.123-0.929-7.521-1.194-0.841 2.124-1.725 4.247-2.61 6.37zM42.382 23.138h8.052l-3.628-22.783h-8.45l-3.274 12.299h-0.133l-3.097-12.299h-8.45l-3.893 22.783h8.096l1.327-13.183 3.628 13.183h4.866l3.628-13.183 1.327 13.183zM52.689 23.138v0.044h15.44v-6.194h-7.388v-2.389h6.547v-5.84h-6.547v-2.212h7.211v-6.194h-15.263v22.783z"></path></svg></a>
+                <nav class="footer_nav">
+                    <ul>
+                        <li><a href="#order-form" class="footer-link">Kontakty</a></li>
+                        <li><a href="#order-form" class="footer-link">Redakcia</a></li>
+                        <li><a href="#order-form" class="footer-link">Vydavateľ</a></li>
+                        <li><a href="#order-form" class="footer-link">Predplatné</a></li>
+                        <li><a href="#order-form" class="footer-link">Etický kódex</a></li>
+                        <li><a href="#order-form" class="footer-link">Predplatné</a></li>
+                        <li><a href="#order-form" class="footer-link">Pomoc</a></li>
+                        <li><a href="#order-form" class="footer-link">Mapa stránky</a></li>
+                        <li><a href="#order-form" class="footer-link">Odvolanie súhlasov</a></li>
+                    </ul>
+                </nav>
+                <button class="footer-btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 -960 960 960"><path d="M160-760v-80h640v80H160Zm280 640v-408L336-424l-56-56 200-200 200 200-56 56-104-104v408h-80Z"/></svg></button>
+            </div>
+        </div>
+    </footer>
+    <!-- ==== FOOTER END ==== -->
+
+    <script type="text/javascript">
+        $(".orderType").on("click", ".orderTypeButton", function () {
+            $(this)
+                .addClass("orderTypeButtonActive")
+                .siblings()
+                .removeClass("orderTypeButtonActive")
+        })
+    </script>
+    <script type="text/javascript">
+        function foo() {
+            document.getElementById("send_order_button").innerHTML =
+                "Lorem Ipsum"
+        }
+
+        function foo1() {
+            document.getElementById("send_order_button").innerHTML =
+                "Lorem Ipsum"
+        }
+    </script>
+    <script>
+        function GetCount() {
+            var dateToday = new Date()
+            var timeZone = dateToday.getTimezoneOffset()
+            var timerSec =
+                Math.ceil((dateToday / 1000 / 60 - timeZone) / 60 / 24) *
+                60 *
+                60 *
+                24 -
+                Math.floor(dateToday / 1000 - timeZone * 60)
+            var amount = timerSec
+            let hours = Math.floor(amount / 60 / 60)
+            let mins = Math.floor((amount / 60) % 60)
+            let secs = Math.floor(amount % 60)
+            if (hours < 10) hours = "0" + hours
+            if (mins < 10) mins = "0" + mins
+            if (secs < 10) secs = "0" + secs
+            $(".hours").html(hours)
+            $(".mins").html(mins)
+            $(".secs").html(secs)
+        }
+        GetCount()
+        setInterval(GetCount, 1000)
+    </script>
+    <style type="text/css">
+        @media screen and (min-width: 1024px) {
+
+            .highlight--foglia .highlight__info__padding,
+            .highlight--scheda .highlight__info__padding {
+                padding-left: 2em !important;
+                padding-right: 22em !important;
+            }
+        }
+    </style>
+    <script>
+        jQuery(document).ready(function () {
+            $("a:not(.noactive), .to_form").on(
+                "touch, click",
+                function (e) {
+                    e.preventDefault()
+                    $("body,html").animate(
+                        {
+                            scrollTop: $("#order_form").offset().top - 50,
+                        },
+                        200
+                    )
+                }
+            )
+
+            $("a.noactive").on("click", function (e) {
+                e.preventDefault()
+            })
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
